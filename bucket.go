@@ -60,7 +60,7 @@ type bucket struct {
 	// For more explanations, see https://golang.org/pkg/sync/atomic/#pkg-note-BUG
 	// and https://go101.org/article/memory-layout.html.
 	expiration int64
-	
+
 	mu     sync.Mutex
 	timers *list.List
 }
